@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D21B55AE1DBFD08800EDB4FE /* AudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B55AD1DBFD08800EDB4FE /* AudioPlayerViewController.m */; };
+		D21B55B41DBFD7B000EDB4FE /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D21B55B31DBFD7B000EDB4FE /* song.mp3 */; };
 		D2E2ADAF1DBE7DC800BCFEE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E2ADAE1DBE7DC800BCFEE8 /* main.m */; };
 		D2E2ADB21DBE7DC800BCFEE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E2ADB11DBE7DC800BCFEE8 /* AppDelegate.m */; };
 		D2E2ADB51DBE7DC800BCFEE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E2ADB41DBE7DC800BCFEE8 /* ViewController.m */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D21B55AC1DBFD08800EDB4FE /* AudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioPlayerViewController.h; path = ../AudioPlayerViewController.h; sourceTree = "<group>"; };
+		D21B55AD1DBFD08800EDB4FE /* AudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioPlayerViewController.m; path = ../AudioPlayerViewController.m; sourceTree = "<group>"; };
+		D21B55B31DBFD7B000EDB4FE /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		D2E2ADAA1DBE7DC800BCFEE8 /* Audio_Video_Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audio_Video_Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E2ADAE1DBE7DC800BCFEE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D2E2ADB01DBE7DC800BCFEE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +71,8 @@
 				D2E2ADB11DBE7DC800BCFEE8 /* AppDelegate.m */,
 				D2E2ADB31DBE7DC800BCFEE8 /* ViewController.h */,
 				D2E2ADB41DBE7DC800BCFEE8 /* ViewController.m */,
+				D21B55AC1DBFD08800EDB4FE /* AudioPlayerViewController.h */,
+				D21B55AD1DBFD08800EDB4FE /* AudioPlayerViewController.m */,
 				D2E2ADB61DBE7DC800BCFEE8 /* Main.storyboard */,
 				D2E2ADB91DBE7DC800BCFEE8 /* Assets.xcassets */,
 				D2E2ADBB1DBE7DC800BCFEE8 /* LaunchScreen.storyboard */,
@@ -78,6 +85,7 @@
 		D2E2ADAD1DBE7DC800BCFEE8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D21B55B31DBFD7B000EDB4FE /* song.mp3 */,
 				D2E2ADAE1DBE7DC800BCFEE8 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -142,6 +150,7 @@
 			files = (
 				D2E2ADBD1DBE7DC800BCFEE8 /* LaunchScreen.storyboard in Resources */,
 				D2E2ADBA1DBE7DC800BCFEE8 /* Assets.xcassets in Resources */,
+				D21B55B41DBFD7B000EDB4FE /* song.mp3 in Resources */,
 				D2E2ADB81DBE7DC800BCFEE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21B55AE1DBFD08800EDB4FE /* AudioPlayerViewController.m in Sources */,
 				D2E2ADB51DBE7DC800BCFEE8 /* ViewController.m in Sources */,
 				D2E2ADB21DBE7DC800BCFEE8 /* AppDelegate.m in Sources */,
 				D2E2ADAF1DBE7DC800BCFEE8 /* main.m in Sources */,

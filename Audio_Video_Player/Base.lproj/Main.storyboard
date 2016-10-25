@@ -64,6 +64,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnAudoiPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7WP-lQ-ZEA"/>
+                                    <segue destination="3Iq-FB-hpS" kind="show" id="SxU-9g-oFG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,6 +94,76 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Audio Player View Controller-->
+        <scene sceneID="77C-Cy-fMr">
+            <objects>
+                <viewController id="3Iq-FB-hpS" customClass="AudioPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VwZ-Nv-DrY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iav-7N-KEe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kEQ-JF-7ju">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTK-y6-lO9">
+                                <rect key="frame" x="250" y="40" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.3411764706" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4hl-Zm-7wa"/>
+                                    <constraint firstAttribute="width" constant="100" id="upw-ig-S5i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPlayCLicked:" destination="3Iq-FB-hpS" eventType="touchUpInside" id="w1o-6c-6Pp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxJ-9S-NQD">
+                                <rect key="frame" x="250" y="90" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.3411764706" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="TeW-Ou-ymC"/>
+                                    <constraint firstAttribute="height" constant="30" id="s2n-jK-KDg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStopClicked:" destination="3Iq-FB-hpS" eventType="touchUpInside" id="cWt-2d-hR6"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iHN-LI-ApJ">
+                                <rect key="frame" x="198" y="140" width="204" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="dlp-Ro-7OG"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="3Iq-FB-hpS" eventType="valueChanged" id="krt-Ih-IWK"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xTK-y6-lO9" firstAttribute="top" secondItem="VwZ-Nv-DrY" secondAttribute="bottom" constant="20" id="192-8J-S5D"/>
+                            <constraint firstItem="iHN-LI-ApJ" firstAttribute="centerX" secondItem="kEQ-JF-7ju" secondAttribute="centerX" id="FBx-d7-bmy"/>
+                            <constraint firstItem="xTK-y6-lO9" firstAttribute="centerX" secondItem="kEQ-JF-7ju" secondAttribute="centerX" id="Qzp-nz-r3f"/>
+                            <constraint firstItem="ZxJ-9S-NQD" firstAttribute="top" secondItem="xTK-y6-lO9" secondAttribute="bottom" constant="20" id="bor-S6-k0h"/>
+                            <constraint firstItem="iHN-LI-ApJ" firstAttribute="top" secondItem="ZxJ-9S-NQD" secondAttribute="bottom" constant="20" id="gu4-Yn-Hs7"/>
+                            <constraint firstItem="ZxJ-9S-NQD" firstAttribute="centerX" secondItem="kEQ-JF-7ju" secondAttribute="centerX" id="pcY-Om-YmH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="iHN-LI-ApJ" id="3Qg-uL-BE9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Q6-XP-gxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1215" y="323"/>
         </scene>
     </scenes>
 </document>
